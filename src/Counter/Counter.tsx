@@ -1,4 +1,5 @@
-import Button from '../components/Button/Button'
+import { default as Button2 } from '../components/Button/Button'
+import { Button, buttonVariants } from '@/components/ui/button'
 
 type CounterProps = {
   value: number
@@ -7,12 +8,14 @@ type CounterProps = {
 }
 
 const Counter = ({ value, onIncrement, onDecrement }: CounterProps) => {
+  console.log('buttonVariants', buttonVariants)
+
   return (
     <div>
       <p>Current Value: {value}</p>
       <div className="flex flex-row items-center gap-4">
-        <Button onClick={onDecrement}>-</Button>
-        <Button onClick={onIncrement}>+</Button>
+        <Button2 onClick={onDecrement}>-</Button2>
+        <Button2 onClick={onIncrement}>+</Button2>
       </div>
     </div>
   )
