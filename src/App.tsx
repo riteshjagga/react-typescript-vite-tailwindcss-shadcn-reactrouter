@@ -8,7 +8,7 @@ import Settings from './modules/Settings/Settings'
 const App = (): React.ReactElement => {
   return (
     <div className="m-4 p-4">
-      <h1>React Typescript Webpack Template</h1>
+      <h1>React + Typescript + Vite + TailwindCSS + ShadCN + React Router Template</h1>
       <BrowserRouter>
         <div className="flex flex-col gap-4">
           <NavBar />
